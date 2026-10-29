@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Tickoff - 5-minute survey</title>
+  <meta name="description" content="Anonymous 5-minute survey about how you plan study and work.">
+  <link rel="stylesheet" href="styles.css?v=2026-10-29b">
+</head>
+<body>
+  <div class="shell">
+    <header id="header">
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="brand-name">Tickoff</span>
+        <span class="brand-sub">5-minute survey</span>
+      </div>
+      <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div id="progress-bar"></div>
+      </div>
+      <div class="meta">
+        <span id="step-label">Step 1</span>
+        <span class="anon">anonymous</span>
+      </div>
+      <p id="notice" class="notice" hidden></p>
+    </header>
+
+    <main id="app" aria-live="polite"></main>
+
+    <div id="error" class="error" role="alert" hidden></div>
+
+    <footer id="footer">
+      <button id="back" class="ghost" type="button">Back</button>
+      <button id="next" class="primary" type="button">Continue</button>
+    </footer>
+
+    <noscript>
+      <p class="error">This survey needs JavaScript. If that is a problem, reply to the message that sent you here.</p>
+    </noscript>
+  </div>
+
+  <script src="config.js?v=2026-10-29b"></script>
+  <script src="schema.js?v=2026-10-29b"></script>
+  <script src="validate.js?v=2026-10-29b"></script>
+  <script src="app.js?v=2026-10-29b"></script>
+</body>
+</html>
